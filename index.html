@@ -85,10 +85,11 @@
     <script>
         let newsLetter = document.getElementById('newsletter-link');
 
-    
-        newsLetter.addEventListener("click", newsLetterSignUp() {
+        function newsLetterSignUp() {
             prompt("Please enter your email below to recieve information and updates from us.")
-        });
+        };
+
+        newsLetter.addEventListener("click", newsLetterSignUp());
     </script>
 </body>
 </html>
