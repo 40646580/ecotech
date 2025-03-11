@@ -124,3 +124,7 @@ p {
 .footer-links a:hover {
     color: #88b378;
 }
+
+footer {
+    bottom: 0;
+}
