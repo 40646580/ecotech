@@ -125,7 +125,7 @@ p {
     color: #88b378;
 }
 
-#footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
