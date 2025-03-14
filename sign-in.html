@@ -1,44 +1,65 @@
-let accountEmail = document.getElementById('accountEmail');
-let accountPassword = document.getElementById('accountPassword');
-let signinBtn = document.getElementById('signin-page-btn');
-
-const adminAccounts = [
-    {
-        email: 'finn@ecotech-scotland.co.uk',
-        name: 'Finn Jordan'
-    },
-    {
-        email: 'james@ecotech-scotland.co.uk',
-        name: 'James Smith'
-    },
-    { 
-        email: 'jack@ecotech-scotland.co.uk', 
-        name: 'Jack Wilson' 
-    },
-    { 
-        email: 'ben@ecotech-scotland.co.uk',
-        name: 'Ben Bowman'
-    }
-];
-
-signinBtn.addEventListener("click", function adminAccountsFunction() {
-    let found = false;
-    let currentUser = null;
-
-    adminAccounts.forEach((account) => {
-        if (accountEmail.value === account.email && accountPassword.value === 'password') {
-            found = true;
-            currentUser = account; // Store the found account
-        }
-    });
-
-    if (found) {
-        // Store the user in localStorage
-        localStorage.setItem("currentUser", JSON.stringify(currentUser));
-
-        // Redirect to account page
-        window.location.href = "account.html";
-    } else {
-        alert("Account not found");
-    }
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <link rel="stylesheet" href="styles.css">
+<body>
+  
+        <div class="container">
+            <div class="header">
+                <h1>EcoTech</h1>
+                <div class="nav">
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="account.html">Account</a>
+                    </div>
+                    <a href="sign-in.html"><button id="login-btn">Login</button></a>
+                    <a href="sign-up.html"><button id="signin-btn">Sign Up</button></a>
+                </div>
+            </div>
+            <div class="Login-page">
+                <h1 id="login-title">Login</h1>
+                <div class="login-details">
+                    <input id="accountEmail" type="text" placeholder="Email">
+                    <input id="accountPassword" type="password" placeholder="Password">
+                </div>
+                <input type="submit" id="signin-page-btn" value="Sign In">
+            </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <div class="footer-links">
+                    <div class="footer-columns">
+                        <h1>Quick Links</h1>
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="account.html">Account</a>
+                    </div>
+                    <div class="footer-columns">
+                        <h1>Contact us</h1>
+                        <div id="contact-number">0131 355 1234</div>
+                        <div id="contact-email">info@ecotech-scotland.co.uk</div>
+                    </div>
+                    <div class="newsletter">
+                        <h1 id="newsletter-link">Sign up to Our Newsletter</h1>
+                        <div class="newsletter-details">
+                            <input type="email" placeholder="Enter your email address" id="newsletter-input">
+                            <input type="submit" value="Sign Up" id="newsletter-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+         
+    </div>
+    
+    <script src="script.js"></script> 
+    <script src="sign-in.js"></script> 
+    <script src="account.js"></script> 
+</body>
+</html>
