@@ -17,7 +17,8 @@
                     <a href="about.html">About</a>
                     <a href="account.html">Account</a>
                 </div>
-                <a href="#">Log in/Sign up</a>
+                <a href="sign-in.html"><button id="login-btn">Login</button></a>
+                <a href="sign-up.html"><button id="signin-btn">Sign Up</button></a>
             </div>
         </div>
         <div class="main-content">
@@ -63,15 +64,46 @@
                 <ul>How to Redeem: Contact <a href="https://energysavingtrust.org.uk/advice/wind-turbines/">https://energysavingtrust.org.uk/advice/wind-turbines/</a>and use reference <b>ECO5</b> when inquiring.</ul>
             </div>
         </div>
-        <div class="footer">
-            
-            <div class="footer-links">
-                <a href="#">Reviews</a>
-                <a href="#">Sign up to Newsletter</a>
-                <a href="#">Call us: 0131 355 1234</a>
-                <a href="#">Email us: info@ecotech-scotland.co.uk</a>
+        <footer>
+            <div class="footer">
+                <div class="footer-links">
+                    <div class="footer-columns">
+                        <h1>Quick Links</h1>
+                        <a href="index.html">Home</a>
+                        <a href="services.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="account.html">Account</a>
+                    </div>
+                    <div class="footer-columns">
+                        <h1>Contact us</h1>
+                        <div id="contact-number">0131 355 1234</div>
+                        <div id="contact-email">info@ecotech-scotland.co.uk</div>
+                    </div>
+                    <div class="newsletter">
+                        <h1 id="newsletter-link">Sign up to Our Newsletter</h1>
+                        <div class="newsletter-details">
+                            <input type="email" placeholder="Enter your email address" id="newsletter-input">
+                            <input type="submit" value="Sign Up" id="newsletter-btn">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>        
+        </footer>  
     </div>
+    <script>
+        
+        let newsLetter = document.getElementById('newsletter-input');
+        let newsLetterBtn = document.getElementById('newsletter-btn');
+        
+
+        newsLetterBtn.addEventListener("click", function newsLetterSignUp() {
+            if (newsLetter.value.includes("@") && newsLetter.value.endsWith("com") || newsLetter.value.endsWith("co.uk")) {
+                alert("You have been signed up to the EcoTech newsletter.")
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        });
+        
+    </script>
 </body>
 </html>
