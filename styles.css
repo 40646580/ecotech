@@ -19,6 +19,7 @@ body {
     background-color: #d8e8d6;
     border-top: 5px solid #88b378;
     border-bottom: 5px solid #88b378;
+    
 }
 
 .header h1, .footer p {
@@ -59,6 +60,56 @@ body {
 .nav a {
     text-decoration: none;
     font-size: 14px;
+}
+
+.nav-btns {
+    position: absolute;
+    background-color: #558a5e;
+    color: #ffffff;
+}
+
+#login-btn {
+    position: absolute;
+    background-color: #ffffff;
+    color: #558a5e;
+    top: 0;
+    right: 0;
+    border: 2px solid #558a5e;
+    padding: 8px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 2.5rem 8rem 0rem 0rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#login-btn:hover {
+    transition: 0.5s;
+    background-color: #495c47;
+    color: #ffffff;
+    border: 2px solid #495c47;
+}
+
+#signin-btn {
+    position: absolute;
+    background-color: #558a5e;
+    color: #ffffff;
+    top: 0;
+    right: 0;
+    border: 2px solid #495c47;
+    padding: 8px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 2.5rem 2.5rem 0rem 0rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#signin-btn:hover {
+    transition: 0.5s;
+    background-color: #495c47;
+    color: #ffffff;
+    border: 2px solid #495c47;
 }
 
 .main-content {
@@ -107,20 +158,124 @@ p {
     line-height: 1.6;
 }
 
-.footer-links {
-    margin-top: 10px;
+.images {
+    text-align: center;
     display: flex;
+    margin: 60px;
+    padding: 50px;
+    border: 4px solid #88b378;
+    border-radius: 50px;
     justify-content: center;
-    gap: 200px;
+    gap: 50px;
+}
+
+#solar-panels, #graph, #wind-turbine {
+    border-radius: 50px;
+}
+
+.Login-page {
+    text-align: center;
+    margin: 40px;
+}
+
+#login-title {
+ 
+}
+
+.login-details {
+    display: flex;
+    flex-direction: column;
+    width: 225px;
+    gap: 10px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+#signin-page-btn {
+    background-color: #558a5e;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    width: 225px;
+    border-radius: 5px;
+    margin: 2.5rem 2.5rem 0rem 0rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+footer {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    height: 250px;
+}
+
+.footer {
+    width: 100vw;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0rem 10rem 0rem 10rem;
 }
 
 .footer-links a {
     text-decoration: none;
     color: #2e4d1d;
-    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
     color: #88b378;
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter {
+    
+}
+
+#newsletter-input {
+    height: 40px;
+    width: 250px;
+    border: none;
+    padding: 0rem 1rem 0rem 1rem;
+    font-size: 16px;
+}
+
+#newsletter-btn {
+    border: none;
+    background-color: #88b378;
+    color: #ffffff;
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#newsletter-btn:hover {
+    transition: 0.5s;
+    background-color: #2e4d1d;
+}
+
+
+#contact-number {
+
+    
+}
+
+#contact-email {
+    
+}
+
+#reviews-img {
+
 }
