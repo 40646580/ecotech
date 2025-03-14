@@ -9,7 +9,6 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="images/ecotech.png"></img>
             <h1>Account</h1>
             <div class="nav">
                 <div class="nav-links">
@@ -23,12 +22,14 @@
             </div>
         </div>
         <div class="main-content">
-            <div class="content-box">
+            <div class="content-box" id="account-content">
                 <h2>Your Account</h2>
+                <!--
                 <p>Name: Finn Jordan</p>
                 <p>Email: 40646580@live.napier.ac.uk</p>
                 <p>Password: **********</p>
-                <p>Date of birth: 13 July 2003</p>
+                <p>Date of birth: 13 July 2003</p> 
+                -->
             </div>
         </div>
         <br>
@@ -65,20 +66,8 @@
         </footer>
         
     </div>
-    <script>
-        
-        let newsLetter = document.getElementById('newsletter-input');
-        let newsLetterBtn = document.getElementById('newsletter-btn');
-        
-
-        newsLetterBtn.addEventListener("click", function newsLetterSignUp() {
-            if (newsLetter.value.includes("@") && newsLetter.value.endsWith("com") || newsLetter.value.endsWith("co.uk")) {
-                alert("You have been signed up to the EcoTech newsletter.")
-            } else {
-                alert("Please enter a valid email address.");
-            }
-        });
-        
-    </script>
+    <script src="script.js"></script> 
+    <script src="sign-in.js"></script> 
+    <script src="account.js"></script> 
 </body>
 </html>
