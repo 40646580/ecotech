@@ -9,7 +9,6 @@
 <body>
     <div class="container">
         <div class="header">
-            <img src="images/ecotech.png"></img>
             <h1>Services</h1>
             <div class="nav">
                 <div class="nav-links">
@@ -91,20 +90,9 @@
             </div>
         </footer>  
     </div>
-    <script>
-        
-        let newsLetter = document.getElementById('newsletter-input');
-        let newsLetterBtn = document.getElementById('newsletter-btn');
-        
-
-        newsLetterBtn.addEventListener("click", function newsLetterSignUp() {
-            if (newsLetter.value.includes("@") && newsLetter.value.endsWith("com") || newsLetter.value.endsWith("co.uk")) {
-                alert("You have been signed up to the EcoTech newsletter.")
-            } else {
-                alert("Please enter a valid email address.");
-            }
-        });
-        
-    </script>
+    <script src="script.js"></script> 
+    <script src="sign-in.js"></script> 
+    <script src="account.js"></script> 
 </body>
 </html>
+
